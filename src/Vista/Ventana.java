@@ -6,6 +6,7 @@ import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Ventana extends JFrame {
@@ -14,11 +15,12 @@ public class Ventana extends JFrame {
     public JButton boton2 = new JButton("Jugar");
     public JTextField texto1 = new JTextField();
     public JLabel texto2 = new JLabel("Dado:");
+    public JPanel pnl = new JPanel();
     public Mapa mapa = new Mapa();
     private Controlador c;
     
     public Ventana (){
-        this.setBounds(0, 0, 950, 750);
+        this.setBounds(0, 0, 1500, 750);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLayout(null);
         this.initComponents();
@@ -44,6 +46,10 @@ public class Ventana extends JFrame {
         this.mapa.setBounds(0, 0, 950, 750);
         this.add(mapa);
         this.mapa.setVisible(true);
+
+        this.pnl.setBounds(750, 0, 750, 750);
+        this.setBackground(new java.awt.Color(222, 184, 135));
+        this.add(pnl);
     }
     public JButton getBoton1() {
         return boton1;
