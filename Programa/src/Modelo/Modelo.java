@@ -1,122 +1,126 @@
-
 package Modelo;
 
 import Vista.Ventana;
 import java.util.ArrayList;
 
 public class Modelo {
+
     private Ventana ventana;
-    
-    public Modelo(Ventana v){
+
+    public Modelo(Ventana v) {
         this.ventana = v;
     }
     ArrayList<Nodo> rojos = new ArrayList<>();
     ArrayList<Nodo> azules = new ArrayList<>();
-    
+
+    int soldados = 1;
+    int refuerzos = 1;
+
     public int a = 35;
     public int b = 35;
+
+    public int c = a + b;
+    public int d = (int) (Math.random() * (6) + 1);
+    public int e = (int) (Math.random() * (2) + 1);
+    public int f = (int) (Math.random() * (3) + 1);
     
-    public int c = a+b;
-    public int d = (int) (Math.random()*(6)+1);
-    public int e =  (int) (Math.random()*(2)+1);
-   
-    public void posicionar(){
+
+    public void posicionar() {
         //Para nodo 1: Argentina
-        String[] vecinos1 = {"2","3"};
-        if(e==1){
-            rojos.add(new Nodo(260,580,"1",vecinos1));
-        }
-        else{
-            azules.add(new Nodo(260,580,"1",vecinos1));
+        String[] vecinos1 = {"2", "3"};
+        if (e == 1) {
+            rojos.add(new Nodo(260, 580, soldados, vecinos1, "Argentina"));
+        } else {
+            azules.add(new Nodo(260, 580, soldados, vecinos1, "Argentina"));
         }
         //Para nodo 2: Venezuela
-        String[] vecinos2 = {"1","2","4"};
-        if(e==2){
-            rojos.add(new Nodo(230,477,"1",vecinos2));
-        }        
-        else{
-            azules.add(new Nodo(230,477,"1",vecinos2));
+        String[] vecinos2 = {"1", "2", "4"};
+        if (e == 2) {
+            rojos.add(new Nodo(230, 477, soldados, vecinos2, "Venezuela"));
+        } else {
+            azules.add(new Nodo(230, 477, soldados, vecinos2, "Venezuela"));
         }
         //Para nodo 3: Brazil
-        String[] vecinos3 = {"1","2","20"};
-        if(e==1){
-            rojos.add(new Nodo(300,520,"1",vecinos3));
+        String[] vecinos3 = {"1", "2", "20"};
+        if (e == 1) {
+            rojos.add(new Nodo(300, 520, soldados, vecinos3, "Brazil"));
 
-        }else{
-            azules.add(new Nodo(300,520,"1",vecinos3));
+        } else {
+            azules.add(new Nodo(300, 520, soldados, vecinos3, "Brazil"));
         }
         //Para nodo 4: America Central
-        String[] vecinos4 = {"2","5"};
-        if(e==2){
-            rojos.add(new Nodo(155,420,"1",vecinos4));
+        String[] vecinos4 = {"2", "5"};
+        if (e == 2) {
+            rojos.add(new Nodo(140, 410, soldados, vecinos4, "America Central"));
 
-        }else{
-            azules.add(new Nodo(155,420,"1",vecinos4));
+        } else {
+            azules.add(new Nodo(140, 410, soldados, vecinos4, "America Central"));
         }
         //Para nodo 5: Estados Unidos Occidental
-        String[] vecinos5 = {"4","6","7"};
-        if(e==1){
-            rojos.add(new Nodo(100,285,"1",vecinos5));
+        String[] vecinos5 = {"4", "6", "7"};
+        if (e == 1) {
+            rojos.add(new Nodo(100, 310, soldados, vecinos5, "Estados Unidos Occidental"));
 
-        }else{
-            azules.add(new Nodo(100,285,"1",vecinos5));
+        } else {
+            azules.add(new Nodo(100, 310, soldados, vecinos5, "Estados Unidos Occidental"));
         }
         //Para nodo 6: Estados Unidos Oriental
-        String[] vecinos6 = {"5","8","9"};
-        if(e==2){
-            rojos.add(new Nodo(165,285,"1",vecinos6));
+        String[] vecinos6 = {"5", "8", "9"};
+        if (e == 2) {
+            rojos.add(new Nodo(180, 285, soldados, vecinos6, "Estados Unidos Oriental"));
 
-        }else{
-            azules.add(new Nodo(165,285,"1",vecinos6));
+        } else {
+            azules.add(new Nodo(180, 285, soldados, vecinos6, "Estados Unidos Oriental"));
         }
         //Para nodo 7: Alberta
-        String[] vecinos7 = {"5","8","10","11"};
-        if(e==1){
-            rojos.add(new Nodo(90,185,"1",vecinos7));
+        String[] vecinos7 = {"5", "8", "10", "11"};
+        if (e == 1) {
+            rojos.add(new Nodo(90, 185, soldados, vecinos7, "Alberta"));
 
-        }else{
-            azules.add(new Nodo(90,185,"1",vecinos7));
+        } else {
+            azules.add(new Nodo(90, 185, soldados, vecinos7, "Alberta"));
         }
         //Para nodo 8: Ontario
-        String[] vecinos8 = {"7","9","11","12"};
-        if(e==2){
-            rojos.add(new Nodo(155,210,"1",vecinos8));
+        String[] vecinos8 = {"7", "9", "11", "12"};
+        if (e == 2) {
+            rojos.add(new Nodo(155, 210, soldados, vecinos8, "Ontaro"));
 
-        }else{
-            azules.add(new Nodo(155,210,"1",vecinos8));
+        } else {
+            azules.add(new Nodo(155, 210, soldados, vecinos8, "Ontaro"));
         }
         //Para nodo 9: Quebec
-        String[] vecinos9 = {"6","8","12"};
-        if(e==1){
-            rojos.add(new Nodo(200,200,"1",vecinos9));
+        String[] vecinos9 = {"6", "8", "12"};
+        if (e == 1) {
+            rojos.add(new Nodo(200, 200, soldados, vecinos9, "Quebec"));
 
-        }else{
-            azules.add(new Nodo(200,200,"1",vecinos9));
-        } 
+        } else {
+            azules.add(new Nodo(200, 200, soldados, vecinos9, "Quebec"));
+        }
         //Para nodo 10: Alaska (FALTA VECINO DE KAMCHATKA)
-        String[] vecinos10 = {"7","11"};
-        if(e==2){
-            rojos.add(new Nodo(45,90,"1",vecinos10));
+        String[] vecinos10 = {"7", "11"};
+        if (e == 2) {
+            rojos.add(new Nodo(45, 90, soldados, vecinos10, "Alaska"));
 
-        }else{
-            azules.add(new Nodo(45,90,"1",vecinos10));
-        } 
+        } else {
+            azules.add(new Nodo(45, 90, soldados, vecinos10, "Alaska"));
+        }
         //Para nodo 11: Terrirorios noroccidentales
-        String[] vecinos11 = {"10","7","8","12"};
-        if(e==1){
-            rojos.add(new Nodo(90,120,"1",vecinos11));
+        String[] vecinos11 = {"10", "7", "8", "12"};
+        if (e == 1) {
+            rojos.add(new Nodo(90, 120, soldados, vecinos11, "Territorios noroccidentales"));
 
-        }else{
-            azules.add(new Nodo(90,120,"1",vecinos11));
-        } 
+        } else {
+            azules.add(new Nodo(90, 120, soldados, vecinos11, "Territorios noroccidentales"));
+        }
         //Para nodo 12: Groenlandia
-        String[] vecinos12 = {"8","9","11"};
-        if(e==2){
-            rojos.add(new Nodo(265,100,"1",vecinos12));
+        String[] vecinos12 = {"8", "9", "11"};
+        if (e == 2) {
+            rojos.add(new Nodo(265, 100, soldados, vecinos12, "Groelandia"));
 
-        }else{
-            azules.add(new Nodo(265,100,"1",vecinos12));
-        } 
+        } else {
+            azules.add(new Nodo(265, 100, soldados, vecinos12, "Groelandia"));
+        }
+
 //        //Para nodo 13: Estados Unidos Occidental
 //        String[] vecinos13 = {"2","5"};
 //        if(e==2){
@@ -357,11 +361,6 @@ public class Modelo {
 //        }else{
 //            azules.add(new Nodo(155,420,"1",vecinos4));
 //        } 
-        
-        
-       
-        
-        
 //	for(int i=0;i<a;i++){
 //	    Soldado s = new Soldado((int) (Math.random()*(600)+1), (int) (Math.random()*(600)+1));
 //	    rojos.add(s);
@@ -372,141 +371,70 @@ public class Modelo {
 //	}
 //        ventana.boton1.setEnabled(false);
         updateUI();
+        System.out.println(rojos.get(0));
+        System.out.println(azules.get(0));
+//        System.out.println(azules.get(1));
     }
-    public void jugar(){
-        //Para nodo 1: Argentina
-        String[] vecinos1 = {"2","3"};
-        if(e==1){ 
-            rojos.add(new Nodo(260,580, "1",vecinos1));
+
+    public void reforzar(String pais) {
+     
+        
+        for (int i = 0; i < rojos.size(); i++) {
+            if (rojos.get(i).getNombre().equals(pais)) {
+                rojos.get(i).setSoldados(rojos.get(i).getSoldados() + 1);
+            }
         }
-        else{
-            azules.add(new Nodo(260,580,"1",vecinos1));
+        
+        
+         for (int i = 0; i < azules.size(); i++) {
+            if (azules.get(i).getNombre().equals(pais)) {
+                azules.get(i).setSoldados(azules.get(i).getSoldados() + 1);
+            }
         }
-        //Para nodo 2: Venezuela
-        String[] vecinos2 = {"1","2","4"};
-        if(e==2){
-            rojos.add(new Nodo(230,477,"1",vecinos2));
-        }        
-        else{
-            azules.add(new Nodo(230,477,"1",vecinos2));
-        }
-        //Para nodo 3: Brazil
-        String[] vecinos3 = {"1","2","20"};
-        if(e==1){
-            rojos.add(new Nodo(300,520,"1",vecinos3));
 
-        }else{
-            azules.add(new Nodo(300,520,"1",vecinos3));
-        }
-        //Para nodo 4: America Central
-        String[] vecinos4 = {"2","5"};
-        if(e==2){
-            rojos.add(new Nodo(155,420,"1",vecinos4));
-
-        }else{
-            azules.add(new Nodo(155,420,"1",vecinos4));
-        }
-        //Para nodo 5: Estados Unidos Occidental
-        String[] vecinos5 = {"4","6","7"};
-        if(e==1){
-            rojos.add(new Nodo(100,285,"1",vecinos5));
-
-        }else{
-            azules.add(new Nodo(100,285,"1",vecinos5));
-        }
-        //Para nodo 6: Estados Unidos Oriental
-        String[] vecinos6 = {"5","8","9"};
-        if(e==2){
-            rojos.add(new Nodo(165,285,"1",vecinos6));
-
-        }else{
-            azules.add(new Nodo(165,285,"1",vecinos6));
-        }
-        //Para nodo 7: Alberta
-        String[] vecinos7 = {"5","8","10","11"};
-        if(e==1){
-            rojos.add(new Nodo(90,185,"1",vecinos7));
-
-        }else{
-            azules.add(new Nodo(90,185,"1",vecinos7));
-        }
-        //Para nodo 8: Ontario
-        String[] vecinos8 = {"7","9","11","12"};
-        if(e==2){
-            rojos.add(new Nodo(155,210,"1",vecinos8));
-
-        }else{
-            azules.add(new Nodo(155,210,"1",vecinos8));
-        }
-        //Para nodo 9: Quebec
-        String[] vecinos9 = {"6","8","12"};
-        if(e==1){
-            rojos.add(new Nodo(200,200,"1",vecinos9));
-
-        }else{
-            azules.add(new Nodo(200,200,"1",vecinos9));
-        } 
-        //Para nodo 10: Alaska (FALTA VECINO DE KAMCHATKA)
-        String[] vecinos10 = {"7","11"};
-        if(e==2){
-            rojos.add(new Nodo(45,90,"1",vecinos10));
-
-        }else{
-            azules.add(new Nodo(45,90,"1",vecinos10));
-        } 
-        //Para nodo 11: Terrirorios noroccidentales
-        String[] vecinos11 = {"10","7","8","12"};
-        if(e==1){
-            rojos.add(new Nodo(90,120,"1",vecinos11));
-
-        }else{
-            azules.add(new Nodo(90,120,"1",vecinos11));
-        } 
-        //Para nodo 12: Groenlandia
-        String[] vecinos12 = {"8","9","11"};
-        if(e==2){
-            rojos.add(new Nodo(265,100,"1",vecinos12));
-
-        }else{
-            azules.add(new Nodo(265,100,"1",vecinos12));
-        } 
-//        c = rojos.size()+azules.size();
-//        d = (int) (Math.random()*(c)+1);
-//        ventana.texto1.setText(d+" ");
-//        
-//        if(d>azules.size()){
-//            JOptionPane.showMessageDialog(ventana,"Han ganado los rojos");
-//            if(azules.isEmpty()){
-//                JOptionPane.showMessageDialog(ventana,"Los azules fueron exterminados");
-//                 System.exit(0);
-//            }else{
-//                azules.remove(0);
-//            }  
+         
+         
+        
+         
+         
+        
+//        //Para nodo 2: Venezuela
+//
+//        if (e == 2) {
+//            for (int i = 0; i < 1; i++) {
+//                rojos.get(i).setSoldados(refuerzos++);
+//            }
+//        } else {
+//            for (int i = 0; i < 1; i++) {
+//                azules.get(i).setSoldados(refuerzos);
+//            }
 //        }
-//        else if(d<azules.size()){
-//            JOptionPane.showMessageDialog(ventana,"Han ganado los azules");
-//            if(rojos.isEmpty()){
-//                JOptionPane.showMessageDialog(ventana,"Los rojos fueron exterminados");
-//                System.exit(0);
-//            }else{
-//                rojos.remove(0);
-//            } 
+
+        System.out.println(f);
+//        Para nodo 2: Venezuela
+//        String[] vecinos2 = {"1","2","4"};
+//        if(e==2){
+//            if(e==2){
+//                for(int i=0; i<1; i++){
+//                    rojos.get(i).setSoldados(refuerzos2++);
+//                }
+//            }
+//            else{
+//                for(int i=0; i<1; i++){
+//                    azules.get(i).setSoldados(refuerzos2++);
+//                }
+//            }
 //        }
-//        else if(azules.isEmpty()){
-//            JOptionPane.showMessageDialog(ventana,"Juego terminado");
-//        }
-//        else if(rojos.isEmpty()){
-//            JOptionPane.showMessageDialog(ventana,"Juego terminado");
-//        }
-//        updateUI();
+        updateUI();
     }
-    private void updateUI(){
+
+    private void updateUI() {
         ventana.getMapa().azules = new ArrayList();
         ventana.getMapa().rojos = new ArrayList();
-        
+
         ventana.getMapa().azules.addAll(azules);
         ventana.getMapa().rojos.addAll(rojos);
-        
+
         ventana.getMapa().repaint();
     }
 }

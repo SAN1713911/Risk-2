@@ -14,6 +14,11 @@ public class Mapa extends JPanel{
     public ArrayList<Nodo> rojos = new ArrayList<>();
     public ArrayList<Nodo> azules = new ArrayList<>();
     
+    public Mapa () {
+        this.setSize(800,800);
+        this.setVisible(true);
+    }
+    
     private Image imagen;
     @Override
     public void paint (Graphics g){
@@ -23,23 +28,18 @@ public class Mapa extends JPanel{
         super.paint(g);
         
         for(int i=0; i<rojos.size(); i++){
+            String soldados = String.valueOf(rojos.get(i).getSoldados());
             g.setColor(Color.RED);
             g.fillOval(rojos.get(i).getX(), rojos.get(i).getY(), 13,13);
-            g.drawString(rojos.get(i).getSoldados(), rojos.get(i).getX(), rojos.get(i).getY());
+            g.drawString(soldados, rojos.get(i).getX(), rojos.get(i).getY());
+             
         }
         for(int i=0; i<azules.size(); i++){
+            String soldados = String.valueOf(azules.get(i).getSoldados());
             g.setColor(Color.BLUE);
             g.fillOval(azules.get(i).getX(), azules.get(i).getY(), 13,13);
-            g.drawString(azules.get(i).getSoldados(), azules.get(i).getX(), azules.get(i).getY());
+            g.drawString(soldados, azules.get(i).getX(), azules.get(i).getY());
         }
-        
-//        for(int i=0; i<rojos.size();i++) {
-//            g.fillOval(rojos.get(i).getX(),rojos.get(i).getY(), 13,13);
-//        }
-//        g.setColor(Color.BLUE);
-//	for(int j=0; j<azules.size();j++) {
-//            g.fillOval(azules.get(j).getX(),azules.get(j).getY(), 13,13);
-//        }
         if(!rojos.isEmpty())
         {
 //            g.drawLine(220, 540, 420, 240);

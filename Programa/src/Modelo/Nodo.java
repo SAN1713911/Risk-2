@@ -1,17 +1,18 @@
-
 package Modelo;
 
 public class Nodo {
     
     private int x, y;
-    private String soldados;
+    private int soldados;
     private String[] vecinoslista;
+    private String nombre;
 
-    public Nodo(int x, int y, String soldados, String[] vecinoslista) {
+    public Nodo(int x, int y, int soldados, String[] vecinoslista, String nombre) {
         this.x = x;
         this.y = y;
         this.soldados = soldados;
         this.vecinoslista = vecinoslista;
+        this.nombre = nombre;
     }
 
     public int getX() {
@@ -28,20 +29,16 @@ public class Nodo {
 
     public void setY(int y) {
         this.y = y;
-    } 
+    }
 
-    public String getSoldados() {
+    public int getSoldados() {
         return soldados;
     }
 
-    public void setSoldados(String soldados) {
+    public void setSoldados(int soldados) {
         this.soldados = soldados;
     }
-    
-    public String getVecinonombre(int a) {
-        return vecinoslista[a];
-    }
-    
+
     public String[] getVecinoslista() {
         return vecinoslista;
     }
@@ -50,6 +47,18 @@ public class Nodo {
         this.vecinoslista = vecinoslista;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
+    
+    
+    
     @Override
     public String toString() {
         return "Nodo{" + "x=" + x + ", y=" + y + ", soldados=" + soldados + ", vecinoslista=" + vecinoslista + '}';
