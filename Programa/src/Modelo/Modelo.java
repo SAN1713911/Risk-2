@@ -3,6 +3,8 @@ package Modelo;
 import Vista.Ventana;
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 public class Modelo {
 
     private Ventana ventana;
@@ -121,254 +123,282 @@ public class Modelo {
             azules.add(new Nodo(265, 100, soldados, vecinos12, "Groelandia"));
         }
 
-//        //Para nodo 13: Estados Unidos Occidental
-//        String[] vecinos13 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 14: Estados Unidos Occidental
-//        String[] vecinos14 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 15: Estados Unidos Occidental
-//        String[] vecinos15 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 16: Estados Unidos Occidental
-//        String[] vecinos16 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 17: Estados Unidos Occidental
-//        String[] vecinos17 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 18: Estados Unidos Occidental
-//        String[] vecinos18 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 19: Estados Unidos Occidental
-//        String[] vecinos19 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 20: Estados Unidos Occidental
-//        String[] vecinos20 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 21: Estados Unidos Occidental
-//        String[] vecinos21 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 22: Estados Unidos Occidental
-//        String[] vecinos22 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 23: Estados Unidos Occidental
-//        String[] vecinos23 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 24: Estados Unidos Occidental
-//        String[] vecinos24 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 25: Estados Unidos Occidental
-//        String[] vecinos25 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 26: Estados Unidos Occidental
-//        String[] vecinos26 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 27: Estados Unidos Occidental
-//        String[] vecinos27 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 28: Estados Unidos Occidental
-//        String[] vecinos28 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 29: Estados Unidos Occidental
-//        String[] vecinos29 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 30: Estados Unidos Occidental
-//        String[] vecinos30 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 31: Estados Unidos Occidental
-//        String[] vecinos31 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 32: Estados Unidos Occidental
-//        String[] vecinos32 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 33: Estados Unidos Occidental
-//        String[] vecinos33 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 34: Estados Unidos Occidental
-//        String[] vecinos34 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 35: Estados Unidos Occidental
-//        String[] vecinos35 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 36: Estados Unidos Occidental
-//        String[] vecinos36 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 37: Estados Unidos Occidental
-//        String[] vecinos37 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 38: Estados Unidos Occidental
-//        String[] vecinos38 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 39: Estados Unidos Occidental
-//        String[] vecinos39 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 40: Estados Unidos Occidental
-//        String[] vecinos40 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        }
-//        //Para nodo 41: Estados Unidos Occidental
-//        String[] vecinos41 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//        //Para nodo 42: Estados Unidos Occidental
-//        String[] vecinos42 = {"2","5"};
-//        if(e==2){
-//            rojos.add(new Nodo(155,420,"1",vecinos4));
-//
-//        }else{
-//            azules.add(new Nodo(155,420,"1",vecinos4));
-//        } 
-//	for(int i=0;i<a;i++){
-//	    Soldado s = new Soldado((int) (Math.random()*(600)+1), (int) (Math.random()*(600)+1));
-//	    rojos.add(s);
-//	}
-//	for(int j=0;j<b;j++){
-//	    Soldado s = new Soldado((int) (Math.random()*(600)+1), (int) (Math.random()*(600)+1));
-//	    azules.add(s);
-//	}
+//Para nodo 13: islandia
+String[] vecinos13 = {"12","14"};
+if (e == 1) {
+    rojos.add(new Nodo(390, 145, soldados, vecinos13, "islandia"));
+
+} else {
+    azules.add(new Nodo(390, 145, soldados, vecinos13, "islandia"));
+}
+
+//Para nodo 14: gran Bretaña
+String[] vecinos14 = {"13","15","16","17"};
+if (e == 2) {
+    rojos.add(new Nodo(440, 180, soldados, vecinos14, "gran Bretaña"));
+
+} else {
+    azules.add(new Nodo(440, 180, soldados, vecinos14, "gran Bretaña"));
+}
+
+ //Para nodo 15: Scandinavia
+String[] vecinos15 = {"14","25"};
+if (e == 1) {
+    rojos.add(new Nodo(495, 120, soldados, vecinos15, "Scandinavia"));
+
+} else {
+    azules.add(new Nodo(495, 120, soldados, vecinos15, "Scandinavia"));
+}
+
+
+
+//Para nodo 16: Norte de Europa
+String[] vecinos16 = {"14","17","18","25"};
+if(e==2){
+   rojos.add(new Nodo(475, 215, soldados, vecinos16, "Norte de Europa"));
+
+} else {
+    azules.add(new Nodo(475, 215, soldados, vecinos16, "Norte de Europa"));
+}
+
+//Para nodo 17: Europa Oriental
+String[] vecinos17 = {"14","16","18","20"};
+if(e==1){
+   rojos.add(new Nodo(450, 245, soldados, vecinos17, "Europa Oriental"));
+
+} else {
+    azules.add(new Nodo(450, 245, soldados, vecinos17, "Europa Oriental"));
+}
+
+//Para nodo 18: Europa del sur
+String[] vecinos18 = {"14","16","18","20"};
+if(e==2){
+   rojos.add(new Nodo(480, 255, soldados, vecinos18, "Europa del sur"));
+
+} else {
+    azules.add(new Nodo(480, 255, soldados, vecinos18, "Europa del sur"));
+}
+
+//Para nodo 19: Egipto
+String[] vecinos19 = {"18","20","21","26"};
+if(e==1){
+   rojos.add(new Nodo(510, 360, soldados, vecinos19, "Egipto"));
+
+} else {
+    azules.add(new Nodo(510, 360, soldados, vecinos19, "Egipto"));
+}
+
+
+//Para nodo 20: África del Norte
+String[] vecinos20 = {"17","28","19","21"};
+if(e==2){
+   rojos.add(new Nodo(450, 360, soldados, vecinos20, "África del Norte"));
+
+} else {
+    azules.add(new Nodo(450, 360, soldados, vecinos20, "África del Norte"));
+}
+
+
+//Para nodo 21: Congo
+String[] vecinos21 = {"19","20","22","23"};
+if(e==1){
+   rojos.add(new Nodo(510, 460, soldados, vecinos21, "Congo"));
+
+} else {
+    azules.add(new Nodo(510, 460, soldados, vecinos21, "Congo"));
+}
+
+//Para nodo 22: Este de Africa
+String[] vecinos22 = {"19","21","23","24"};
+if(e==2){
+   rojos.add(new Nodo(555, 460, soldados, vecinos22, "Este de Africa"));
+
+} else {
+    azules.add(new Nodo(555, 460, soldados, vecinos22, "Este de Africa"));
+}
+
+//Para nodo 23: Sudáfrica
+String[] vecinos23 = {"21","22","24"};
+if(e==1){
+   rojos.add(new Nodo(525, 585, soldados, vecinos23, "Sudáfrica"));
+
+} else {
+    azules.add(new Nodo(525, 585, soldados, vecinos23, "Sudáfrica"));
+}
+//Para nodo 24: Madagascar
+String[] vecinos24 = {"22","23"};
+if(e==2){
+   rojos.add(new Nodo(600, 550, soldados, vecinos24, "Madagascar"));
+
+} else {
+    azules.add(new Nodo(600, 550, soldados, vecinos24, "Madagascar"));
+}
+
+//Para nodo 25: Ucrania
+String[] vecinos25 = {"15","16","18","26","27","31"};
+if(e==1){
+   rojos.add(new Nodo(545, 215, soldados, vecinos25, "Ucrania"));
+
+} else {
+    azules.add(new Nodo(545, 215, soldados, vecinos25, "Ucrania"));
+}
+
+//Para nodo 26: Oriente Medio
+String[] vecinos26 = {"19","25","31","33"};
+if(e==2){
+   rojos.add(new Nodo(580, 310, soldados, vecinos26, "Oriente Medio"));
+
+} else {
+    azules.add(new Nodo(580, 310, soldados, vecinos26, "Oriente Medio"));
+}
+
+//Para nodo 27: Ukrania
+String[] vecinos27 = {"25","28","31"};
+if(e==1){
+   rojos.add(new Nodo(645, 150, soldados, vecinos27, "Ukrania"));
+
+} else {
+    azules.add(new Nodo(645, 150, soldados, vecinos27, "Ukrania"));
+}
+
+//Para nodo 28: Siberia
+String[] vecinos28 = {"27","29","31","32","34","35"};
+if(e==2){
+   rojos.add(new Nodo(695, 150, soldados, vecinos28, "Siberia"));
+
+} else {
+    azules.add(new Nodo(695, 150, soldados, vecinos28, "Siberia"));
+}
+
+//Para nodo 29: yakutsk
+String[] vecinos29 = {"28","30","32"};
+if(e==1){
+   rojos.add(new Nodo(750, 80, soldados, vecinos29, "yakutsk"));
+
+} else {
+    azules.add(new Nodo(750, 80, soldados, vecinos29, "yakutsk"));
+}
+
+//Para nodo 30: kamchatka
+String[] vecinos30 = {"29","32","35","36"};
+if(e==2){
+   rojos.add(new Nodo(830, 80, soldados, vecinos30, "kamchatka"));
+
+} else {
+    azules.add(new Nodo(830, 80, soldados, vecinos30, "kamchatka"));
+}
+
+//Para nodo 31: Afganistan
+String[] vecinos31 = {"25","26","27","28","33","34"};
+if(e==1){
+   rojos.add(new Nodo(645, 240, soldados, vecinos31, "Afganistan"));
+
+} else {
+    azules.add(new Nodo(645, 240, soldados, vecinos31, "Afganistan"));
+}
+
+//Para nodo 32: Irkustsk
+String[] vecinos32 = {"28","29","30","35"};
+if(e==2){
+   rojos.add(new Nodo(758, 146, soldados, vecinos32, "Irkustsk"));
+
+} else {
+    azules.add(new Nodo(758, 146, soldados, vecinos32, "Irkustsk"));
+}
+
+//Para nodo 33: India
+String[] vecinos33 = {"26","31","34","37"};
+if(e==1){
+   rojos.add(new Nodo(645, 320, soldados, vecinos33, "India"));
+
+} else {
+    azules.add(new Nodo(645, 320, soldados, vecinos33, "India"));
+}
+
+//Para nodo 34: China
+String[] vecinos34 = {"28","31","33","35","37"};
+if(e==2){
+   rojos.add(new Nodo(695, 290, soldados, vecinos34, "China"));
+
+} else {
+    azules.add(new Nodo(695, 290, soldados, vecinos34, "China"));
+}
+
+//Para nodo 35: Mongolia
+String[] vecinos35 = {"28","32","34","36"};
+if(e==1){
+   rojos.add(new Nodo(758, 220, soldados, vecinos35, "Mongolia"));
+
+} else {
+    azules.add(new Nodo(758, 220, soldados, vecinos35, "Mongolia"));
+}
+
+//Para nodo 36: Japon
+String[] vecinos36 = {"30","35"};
+if(e==2){
+   rojos.add(new Nodo(830, 260, soldados, vecinos36, "Japon"));
+
+} else {
+    azules.add(new Nodo(830, 260, soldados, vecinos36, "Japon"));
+}
+
+//Para nodo 37: Siam
+String[] vecinos37 = {"30","35"};
+if(e==1){
+   rojos.add(new Nodo(740, 365, soldados, vecinos37, "Siam"));
+
+} else {
+    azules.add(new Nodo(740, 365, soldados, vecinos37, "Siam"));
+}
+
+
+//Para nodo 38: Indonesia
+String[] vecinos38 = {"37","39","40"};
+if(e==2){
+   rojos.add(new Nodo(745, 450, soldados, vecinos38, "Indonesia"));
+
+} else {
+    azules.add(new Nodo(750, 450, soldados, vecinos38, "Indonesia"));
+}
+
+//Para nodo 39: Nueva Guinea
+String[] vecinos39 = {"38","40","41"};
+if(e==1){
+   rojos.add(new Nodo(845, 450, soldados, vecinos39, "Nueva Guinea"));
+
+} else {
+    azules.add(new Nodo(845, 450, soldados, vecinos39, "Nueva Guinea"));
+}
+
+//Para nodo 40: El oeste de Australia
+String[] vecinos40 = {"38","39","41"};
+if(e==2){
+   rojos.add(new Nodo(815, 530, soldados, vecinos40, "El oeste de Australia"));
+
+} else {
+    azules.add(new Nodo(815, 530, soldados, vecinos40, "El oeste de Australia"));
+}
+
+//Para nodo 41: Australia del este
+String[] vecinos41 = {"39","40","42"};
+if(e==1){
+   rojos.add(new Nodo(860, 530, soldados, vecinos41, "Australia del este"));
+
+} else {
+    azules.add(new Nodo(860, 530, soldados, vecinos41, "Australia del este"));
+}
+
+//Para nodo 42: LotR
+String[] vecinos42 = {"41"};
+if(e==1){
+   rojos.add(new Nodo(920, 595, soldados, vecinos42, "LotR"));
+
+} else {
+    azules.add(new Nodo(920, 595, soldados, vecinos42, "LotR"));
+}
+
+
+
 //        ventana.boton1.setEnabled(false);
         updateUI();
         System.out.println(rojos.get(0));
@@ -392,6 +422,11 @@ public class Modelo {
             }
         }
 
+        updateUI();
+
+
+
+       
          
          
         

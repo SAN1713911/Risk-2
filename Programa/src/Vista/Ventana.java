@@ -13,10 +13,12 @@ public class Ventana extends JFrame {
      
     public JButton boton1 = new JButton("Posicionar");
     public JButton boton2 = new JButton("Reforzar");
+    
     public JTextField texto1 = new JTextField();
     public JLabel texto2 = new JLabel("Dado:");
     public Mapa mapa = new Mapa();
     private JComboBox<String> ComboReforzar = new JComboBox<String>(); 
+    p
     private Controlador c;
     
     public Ventana (){
@@ -51,6 +53,39 @@ public class Ventana extends JFrame {
         this.ComboReforzar.addItem("Alaska");
         this.ComboReforzar.addItem("Territorios noroccidentales");
         this.ComboReforzar.addItem("Groelandia");
+        this.ComboReforzar.addItem("islandia");
+        this.ComboReforzar.addItem("gran Bretaña");
+        this.ComboReforzar.addItem("Scandinavia");
+        this.ComboReforzar.addItem("Norte de Europa");
+        this.ComboReforzar.addItem("Europa Oriental");
+        this.ComboReforzar.addItem("Europa Oriental");
+        this.ComboReforzar.addItem("Europa del sur");
+        this.ComboReforzar.addItem("Egipto");
+        this.ComboReforzar.addItem("África del Norte");
+        this.ComboReforzar.addItem("Congo");
+        this.ComboReforzar.addItem("Este de Africa");
+        this.ComboReforzar.addItem("Sudáfrica");
+        this.ComboReforzar.addItem("Madagascar");
+        this.ComboReforzar.addItem("Ucrania");
+        this.ComboReforzar.addItem("Oriente Medio");
+        this.ComboReforzar.addItem("Ukrania");
+        this.ComboReforzar.addItem("Siberia");
+        this.ComboReforzar.addItem("yakutsk");
+        this.ComboReforzar.addItem("kamchatka");
+        this.ComboReforzar.addItem("Afganistan");
+        this.ComboReforzar.addItem("Irkustsk");
+        this.ComboReforzar.addItem("India");
+        this.ComboReforzar.addItem("China");
+        this.ComboReforzar.addItem("Mongolia");
+        this.ComboReforzar.addItem("Japon");
+        this.ComboReforzar.addItem("Siam");
+        this.ComboReforzar.addItem("Indonesia");
+        this.ComboReforzar.addItem("El oeste de Australia");
+        this.ComboReforzar.addItem("Australia del este");
+        this.ComboReforzar.addItem("LotR");
+
+       
+      
         
         this.boton1.setBackground(Color.LIGHT_GRAY);
         this.boton1.setBounds(750, 660, 98, 38);
@@ -59,6 +94,7 @@ public class Ventana extends JFrame {
         this.boton2.setBackground(Color.LIGHT_GRAY);
         this.boton2.setBounds(650, 660, 98, 38);
         this.add(boton2); 
+
         
         
         
@@ -76,9 +112,9 @@ public class Ventana extends JFrame {
     public JButton getBoton2() {
         return boton2;
     }
-    public void setBoton2(JButton boton2) {
-        this.boton2 = boton2;
-    }
+    
+
+
     public Controlador getC() {
         return c;
     }
@@ -103,9 +139,12 @@ public class Ventana extends JFrame {
         this.c=cont;
         this.boton1.setActionCommand(utils.Utils.POSICIONAR);
         this.boton2.setActionCommand(utils.Utils.REFORZAR);
+        
         this.boton1.addActionListener(this.c);
         this.boton2.addActionListener(this.c);
+       
         this.ComboReforzar.addItemListener(this.c);
+        
     }    
     public Mapa getMapa(){
         return mapa;
@@ -119,6 +158,7 @@ public class Ventana extends JFrame {
         this.ComboReforzar = ComboReforzar;
     }
     
+   
     
     
 }
